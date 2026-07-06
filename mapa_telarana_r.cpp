@@ -10,13 +10,13 @@ y se procederán a realizar cambios en los parámetros y la forma de la ecuació
 // Agregamos las bibliotecas útiles para generar nuestro código.
 
 double mapa_logistico(double x, double r) {
-    return 2.0 * r * x + 2.0 * x * x; // Esta ecuación corresponde a la forma genérica del mapa logístico.
+    return r * x * (1.0 -x); // Esta ecuación corresponde a la forma genérica del mapa logístico.
 }
 
 int main() {
     // Procedemos a dar los parámetros para la simulación
 
-    double r = -1.22; // Parámetro de control
+    double r = 0.75; // Parámetro de control
     double x0 = 0.8; // Condición inicial
     int iteraciones = 100; // Colocamos el número de pasos.
 
@@ -25,7 +25,7 @@ int main() {
     double xmin = -2.0;
     double xmax = 1.0;
 
-    std::ofstream archivo("cobweb2_data.txt");
+    std::ofstream archivo("cobweb4_data.txt");
     if (!archivo.is_open()){
         std::cerr << "Error al abrir el archivo para escribir." << std::endl;
         return 1;

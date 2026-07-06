@@ -40,9 +40,9 @@ una gráfica en Python. */
 int main() {
     // Procedemos a definir los parámetros para la configuración de la simulación
 
-    int ID_ecuacion = 14; // Este número será para avisarle a Python qué graficar...
-    double param = 0.23; // Definimos el parámetro de control para la función elegida
-    double x0 = 0.2; // Definimos este valor como nuestra condición inicial
+    int ID_ecuacion = 12; // Este número será para avisarle a Python qué graficar...
+    double param = 0.75; // Definimos el parámetro de control para la función elegida
+    double x0 = 0.8; // Definimos este valor como nuestra condición inicial
     int iteraciones = 175; // Estos corresponden a los pasos de la telaraña
 
     // Procedemos a definir los límites para el gráfico de Python
